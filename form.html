@@ -12,12 +12,113 @@
 
     </head>
     <body>
-        <h1>Welcome to Justin's LandScaping Register Form</h1>   
-        <form>
+        
+        <form action="confirm.html">
+            <h1>Welcome to Justin's LandScaping Register Form</h1>   
+
+            <fieldset>
+                <legend><span class="number">1</span> Your Basic Info</legend>
+
+            <label for="FirstName">First Name:</label>
+            <input type="text" id="FirstName" name="user_FirstName" placeholder="First Name">
+
+            <label for="LastName">Last Name:</label>
+            <input type="text" id="LastName" name="user_LastName" placeholder="Last Name">
+
+            <label for="Email">Email:</label>
+            <input type="email" id="Email" name="user_email" placeholder="Email">
+
+            <label for="Password">Password:</label>
+            <input type="password" id="Password" name="user_password" placeholder="Password">
+
+            <label for="ConfirmPassword">Confirm Password:</label>
+            <input type="password" id="ConfirmPassword" name="user_confirmPassword" placeholder="Confirm Password">
+
+            <label for="StreetAddress">StreetAddress:</label>
+            <input type="text" id="StreetAddress" name="user_streetAddress" placeholder="Street Address 1">
+
+            <label for="StreetAddress2">Street Address 2:</label>
+            <input type="text" id="StreetAddress2" name="user_streetAddress" placeholder="Street Address 2">
+
+            <label for="City">City:</label>
+            <input type="text" id="City" name="user_city" placeholder="City">
+
+            <label for="State">State:</label>
+            <input type="text" id="State" name="user_state" placeholder="State">
+
+            <label for="ZipCode">ZipCode:</label>
+            <input type="text" id="ZipCode" name="user_zipCode" placeholder="ZipCode" size="5">
+
+        </fieldset>
+            <br>
+
+        <fieldset>
+            <legend><span class="number">2</span> Language Preferred</legend>
+
+            <label>Language Preference:</label>
+            <input type="radio" id="English" value="english" name="user_language">
+            <label for="English">English</label>
+
+            <input type="radio" id="Spanish" value="spanish" name="user_language">
+            <label for="Spanish">Spanish</label>
+
+            <input type="radio" id="Portuguese" value="portuguese" name="user_language">
+            <label for="Portuguese">portuguese</label>
+
+            <input type="radio" id="French" value="french" name="user_language">
+            <label for="French">French</label>
+
+            <input type="radio" id="German" value="german" name="user_language">
+            <label for="German">German</label>
 
 
+        </fieldset>    
+        <fieldset>
+            <legend><span class="number">3</span> Select a Service Needed</legend>
 
+            <label>Service Needed:</label>
+            <input type="checkbox" id="Lawn" value="lawn" name="user_lawn">
+            <label class="light" for="Lawn">Grass Cutting</label>
 
+            <input type="checkbox" id="Plant" value="plant" name="user_plant">
+            <label class="light" for="Plant">Planting Trees</label>
+
+            <input type="checkbox" id="Mulch" value="mulch" name="user_mulch">
+            <label class="light" for="Mulch">Mulching</label>
+
+            <input type="checkbox" id="Trimming" value="trim" name="user_trim">
+            <label class="light" for="Trimming">Trimming</label>
+
+            <input type="checkbox" id="Fertilize" value="fertilize" name="user_fertilize">
+            <label class="light" for="Fertilize">Fertilize plants</label>
+
+            <input type="checkbox" id="PatioDeck" value="patio/deck" name="user_PatioDeck">
+            <label class="light" for="PatioDeck">Patio/Deck work</label>
+
+            <input type="checkbox" id="Walkway" value="walkway" name="user_walkway">
+            <label class="light" for="Walkway">Walkway work</label>
+
+        </fieldset>    
+        <br>
+
+        <fieldset>
+            <legend><span class="number">4</span> When are you available?</legend>
+
+            <label for="TimeOfDay">Time of Day Schedule</label>
+            <select id="TimeOfDay" name="user_timeOfDay">
+                <option value="Morning">Morning</option>
+
+                <option value="Noon">Noon</option>
+
+                <option value="EarlyEvening">Early Evening</option>
+                
+                <option value="Afternoon">Afternoon</option>
+            </select>
+
+        </fieldset>
+
+        <br>
+            <button type="submit">Submit</button>
         </form>
         
         <footer>
